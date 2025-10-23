@@ -29,8 +29,8 @@
                 <p class="book-author">Written and evolving with <strong>Haider Ali</strong></p>
                 <blockquote class="tagline">"Perfection is slow. Progress teaches."</blockquote>
                 <div class="cta-buttons">
-                    <a href="#about" class="btn btn-primary">Learn More</a>
-                    <a href="#release-notes" class="btn btn-secondary">Read Release Notes</a>
+                    <a href="#preview" class="btn btn-primary">Preview Chapters</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -111,6 +111,88 @@
         </div>
     </section>
 
+    <!-- Book Preview Section -->
+    <section id="preview" class="book-preview">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Preview Chapters</span>
+                <h2>Read Before You Buy</h2>
+                <p class="preview-subtitle">Click on any chapter to preview select pages from the book</p>
+            </div>
+            <div class="chapters-grid">
+                <div class="chapter-card" data-chapter="1">
+                    <div class="chapter-badge">Preview Available</div>
+                    <div class="chapter-number">Chapter 1</div>
+                    <h3>The Living System</h3>
+                    <p>Exploring how design must adapt and evolve with changing contexts and user needs.</p>
+                    <button class="btn-preview">Preview Chapter</button>
+                </div>
+                <div class="chapter-card" data-chapter="2">
+                    <div class="chapter-badge">Preview Available</div>
+                    <div class="chapter-number">Chapter 2</div>
+                    <h3>Trust as Foundation</h3>
+                    <p>Building user experiences grounded in transparency, consistency, and reliability.</p>
+                    <button class="btn-preview">Preview Chapter</button>
+                </div>
+                <div class="chapter-card" data-chapter="3">
+                    <div class="chapter-badge">Preview Available</div>
+                    <div class="chapter-number">Chapter 3</div>
+                    <h3>Designing with AI</h3>
+                    <p>How artificial intelligence reshapes the design process and user interactions.</p>
+                    <button class="btn-preview">Preview Chapter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Reader Modal -->
+    <div id="bookReader" class="book-reader">
+        <div class="book-reader-container">
+            <div class="book-reader-header">
+                <div class="book-reader-info">
+                    <span class="chapter-title-display"></span>
+                    <span class="page-counter"></span>
+                </div>
+                <button class="close-reader" aria-label="Close reader">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+            <div class="book-pages">
+                <div class="book-page left-page">
+                    <div class="page-content"></div>
+                    <div class="page-number"></div>
+                </div>
+                <div class="book-spine"></div>
+                <div class="book-page right-page">
+                    <div class="page-content"></div>
+                    <div class="page-number"></div>
+                </div>
+            </div>
+            <div class="book-reader-controls">
+                <button class="nav-btn prev-btn" aria-label="Previous page">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                    Previous
+                </button>
+                <div class="reader-actions">
+                    <a href="https://www.amazon.com" target="_blank" rel="noopener noreferrer" class="btn btn-amazon">
+                        Buy Full Book on Amazon
+                    </a>
+                </div>
+                <button class="nav-btn next-btn" aria-label="Next page">
+                    Next
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Release Notes Section -->
     <section id="release-notes" class="release-notes">
         <div class="container">
@@ -170,6 +252,7 @@
                     <div class="footer-column">
                         <h4>Book</h4>
                         <ul>
+                            <li><a href="#preview">Preview Chapters</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#release-notes">Release Notes</a></li>
                         </ul>
